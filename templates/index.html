@@ -13,31 +13,17 @@
             <div class="input-group">
                 <label for="from_currency">From:</label>
                 <select id="from_currency" name="from_currency" required>
-                    <option value="USD">USD - United States Dollar</option>
-                    <option value="EUR">EUR - Euro</option>
-                    <option value="GBP">GBP - British Pound Sterling</option>
-                    <option value="JPY">JPY - Japanese Yen</option>
-                    <option value="INR">INR - Indian Rupee</option>
-                    <!-- Add more currencies as needed -->
-                    <option value="CAD">CAD - Canadian Dollar</option>
-                    <option value="AUD">AUD - Australian Dollar</option>
-                    <option value="CHF">CHF - Swiss Franc</option>
-                    <option value="CNY">CNY - Chinese Yuan</option>
+                    {% for currency in currencies %}
+                    <option value="{{ currency }}">{{ currency }}</option>
+                    {% endfor %}
                 </select>
             </div>
             <div class="input-group">
                 <label for="to_currency">To:</label>
                 <select id="to_currency" name="to_currency" required>
-                    <option value="EUR">EUR - Euro</option>
-                    <option value="USD">USD - United States Dollar</option>
-                    <option value="GBP">GBP - British Pound Sterling</option>
-                    <option value="JPY">JPY - Japanese Yen</option>
-                    <option value="INR">INR - Indian Rupee</option>
-                    <!-- Add more currencies as needed -->
-                    <option value="CAD">CAD - Canadian Dollar</option>
-                    <option value="AUD">AUD - Australian Dollar</option>
-                    <option value="CHF">CHF - Swiss Franc</option>
-                    <option value="CNY">CNY - Chinese Yuan</option>
+                    {% for currency in currencies %}
+                    <option value="{{ currency }}">{{ currency }}</option>
+                    {% endfor %}
                 </select>
             </div>
             <div class="input-group">
