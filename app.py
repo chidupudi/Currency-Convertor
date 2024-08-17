@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 API_KEY = 'your_api_key'  # Replace with your currency API key
-API_URL = f"https://v6.exchangerate-api.com/v6/{API_KEY}/latest/"
+API_URL = f"https://v6.exchangerate-api.com/v6/{API_KEY}/latest /"
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
