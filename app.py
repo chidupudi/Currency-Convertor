@@ -40,7 +40,7 @@ def index():
             return render_template('index.html', converted_amount=converted_amount, from_currency=from_currency, to_currency=to_currency, amount=amount, currencies=currencies)
         else:
             return render_template('index.html', error="Error in fetching data. Please try again.", currencies=currencies)
-    return render_template('index.html', currencies=currencies)
+    return render_template('index.html ', currencies=currencies)
 
 if __name__ == '__main__':
     app.run(debug=True)
