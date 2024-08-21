@@ -25,7 +25,7 @@ def get_supported_currencies():
 @app.route('/', methods=['GET', 'POST'])
 def index():
     currencies = get_supported_currencies()
-    if request.method == 'POST ':
+    if request.method == 'POST':
         from_currency = request.form.get('from_currency')
         to_currency = request.form.get('to_currency')
         amount = float(request.form.get('amount'))
