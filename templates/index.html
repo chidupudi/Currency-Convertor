@@ -13,6 +13,7 @@
             <div class="input-group">
                 <label for="from_currency">From:</label>
                 <select id="from_currency" name="from_currency " required>
+                    
                     {% for currency in currencies %}
                     <option value="{{ currency }}">{{ currency }}</option>
                     {% endfor %}
