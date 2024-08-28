@@ -29,7 +29,6 @@ def index():
         from_currency = request.form.get('from_currency')
         to_currency = request.form.get('to_currency')
         amount = float(request.form.get('amount'))
-
         response = requests.get(API_URL + from_currency)
         response.raise_for_status()  # Check if the request was successful
         data = response.json()
