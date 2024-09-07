@@ -34,6 +34,7 @@ def index():
         response.raise_for_status()  # Check if the request was successful
         data = response.json()
 
+
         if data['result'] == 'success':
             conversion_rate = data['conversion_rates'][to_currency]
             converted_amount = round(amount * conversion_rate, 2)
