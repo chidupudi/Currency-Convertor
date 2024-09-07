@@ -23,6 +23,7 @@ def get_supported_currencies():
         return []
 
 @app.route('/', methods=['GET', 'POST'])
+
 def index():
     currencies = get_supported_currencies()
     if request.method == 'POST':
